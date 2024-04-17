@@ -1,0 +1,21 @@
+data:
+  data_dir: /dataset
+
+model:
+  batch_size: 64
+  num_workers: 4
+  shuffle: True
+  pin_memory: True
+  lr: 0.001
+  num_epochs: 100
+
+autoencoder:
+  n_fft: 1024
+  hop_length: 256
+  hidden_size: 256
+
+inference:
+  idx_1: 3
+  idx_2: 5
+  pitch: 50
+  sr: 16000
